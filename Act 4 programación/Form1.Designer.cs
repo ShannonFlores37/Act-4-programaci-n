@@ -47,10 +47,11 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Gadugi", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTitulo.Location = new Point(187, 26);
+            lblTitulo.Font = new Font("Palace Script MT", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitulo.ForeColor = Color.White;
+            lblTitulo.Location = new Point(210, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(403, 41);
+            lblTitulo.Size = new Size(383, 60);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Formulario de contacto";
             lblTitulo.Click += label1_Click;
@@ -58,10 +59,11 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNombre.ForeColor = Color.Snow;
             lblNombre.Location = new Point(49, 73);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(85, 25);
+            lblNombre.Size = new Size(91, 25);
             lblNombre.TabIndex = 1;
             lblNombre.Text = "Nombre:";
             // 
@@ -163,6 +165,7 @@
             txtbConfirmacion.ReadOnly = true;
             txtbConfirmacion.Size = new Size(702, 52);
             txtbConfirmacion.TabIndex = 11;
+            txtbConfirmacion.TextAlign = HorizontalAlignment.Center;
             // 
             // lllbl
             // 
@@ -173,11 +176,13 @@
             lllbl.TabIndex = 12;
             lllbl.TabStop = true;
             lllbl.Text = "Ver politica de privacidad";
+            lllbl.LinkClicked += lllbl_LinkClicked;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Pink;
             ClientSize = new Size(800, 450);
             Controls.Add(lllbl);
             Controls.Add(txtbConfirmacion);
