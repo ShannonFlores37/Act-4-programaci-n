@@ -6,5 +6,15 @@ namespace Act_4_programación
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
